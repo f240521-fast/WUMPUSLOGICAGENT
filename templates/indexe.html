@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Wumpus Logic Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>Dynamic Wumpus Logic Agent</h1>
+
+    <div class="controls">
+        <input type="number" id="rows" placeholder="Rows">
+        <input type="number" id="cols" placeholder="Columns">
+        <button onclick="generateGrid()">Generate Grid</button>
+        <button onclick="moveAgent()">Move Agent</button>
+    </div>
+
+    <div class="dashboard">
+        <p><strong>Percepts:</strong> <span id="percepts">None</span></p>
+        <p><strong>Inference Steps:</strong> <span id="steps">0</span></p>
+    </div>
+
+    <div id="grid"></div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>

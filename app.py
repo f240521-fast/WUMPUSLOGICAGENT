@@ -10,7 +10,7 @@ kb = None
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("indexe.html")
 
 
 @app.route("/generate", methods=["POST"])
